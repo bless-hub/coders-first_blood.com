@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  src: local('Gilroy'), url('../../fonts/Gilroy-Light.woff') format('woff');
+}
+
+.footer-wrapper {
+  background-color: $background-color-dark;
+  width: 100%;
+  height: 105px;
+}
+
+.footer__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  width: 447px;
+  align-items: baseline;
+  text-align: left;
+}
+
+.footer__item {
+  width: 166px;
+}
+
+.footer__link {
+  @extend %link;
+  font-family: $primary-font-family;
+  font-size: 9px;
+  line-height: 13px;
+  color: #a2a2a2;
+}
+
+.footer__title {
+  font-family: $primary-font-family;
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 11px;
+  color: $primary-white-color;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .footer-socials {
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+  }
+}
+
+.footer-socials__link {
+  @extend %link;
+  font-size: 10px;
+  line-height: 16px;
+  color: $primary-white-color;
+  font-family: $primary-font-family;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-button {
+  border: 1.25px solid #1b4371;
+  width: 137px;
+  height: 31px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+}
