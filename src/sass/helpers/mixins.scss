@@ -1,28 +1,30 @@
-@mixin font-settings($size, $height){
-    font-style: $size;
-    line-height: $height;
+@mixin font-settings($size, $height, $color, $weight) {
+  font-style: $size;
+  line-height: $height;
+  color: $color;
+  font-weight: $weight;
 }
-@mixin pseudo ($display: inline-block, $content: ''){
-display: $display;
-content: $content;
+@mixin pseudo($display: inline-block, $content: '') {
+  display: $display;
+  content: $content;
 }
-    
+
 @mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
-    background-image: url($path);
-    background-size: $size;
-    background-repeat: $repeat;
-    background-position: $pos;
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
 }
 
 @mixin center-flex($type: 'all') {
-  display: flex; 
+  display: flex;
 
-  @if $type=='all' {
-      justify-content: center;
-      align-items: center;
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
   } @else if $type== 'hor' {
-      justify-content: center;
+    justify-content: center;
   } @else if $type== 'ver' {
-      align-items: center;
-}
+    align-items: center;
+  }
 }
