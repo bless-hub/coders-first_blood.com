@@ -1,60 +1,58 @@
-@font-face {
-  font-family: 'Gilroy';
-  font-weight: 300;
-  src: local('Gilroy'), url('../../fonts/Gilroy-Light.woff') format('woff');
+/*container*/
+.footer-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer-wrapper {
+.footer-socials {
+  display: none;
+}
+
+/*footer-1*/
+.footer__wrapper {
+  padding-top: 18px;
   background-color: $background-color-dark;
   width: 100%;
   height: 105px;
+  border-bottom: 1px solid #a2a2a2;
 }
 
 .footer__list {
   @extend %list;
-  display: flex;
-  justify-content: space-between;
-  width: 447px;
-  align-items: baseline;
   text-align: left;
 }
 
 .footer__item {
-  width: 166px;
+  width: 85px;
+  line-height: 9px;
+  padding-top: 12px;
 }
 
 .footer__link {
   @extend %link;
   font-family: $primary-font-family;
   font-size: 9px;
-  line-height: 13px;
   color: #a2a2a2;
+  margin: 0;
 }
 
 .footer__title {
   font-family: $primary-font-family;
   font-size: 9px;
   letter-spacing: 1px;
-  line-height: 11px;
+  line-height: normal;
   color: $primary-white-color;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-  .footer-socials {
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-  }
+  margin: 0;
 }
 
 .footer-socials__link {
   @extend %link;
+  display: block;
   font-size: 10px;
   line-height: 16px;
   color: $primary-white-color;
@@ -64,11 +62,52 @@
 }
 
 .footer-button {
-  border: 1.25px solid #1b4371;
-  width: 137px;
-  height: 31px;
+  font-size: 9px;
+  font-family: "Acrom";
+  font-weight: bold;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
+  background-color: $background-color-dark;
+  color: $primary-white-color;
+  border: 0.625px solid #1b4371;
+  width: 121px;
+  height: 20px;
 
+  &:hover {
+    border: none;
+    background-color: #ff6b08;
+  }
+}
+
+/*footer-2*/
+.footer-2__wrapper {
+  display: flex;
+  background-color: #202020;
+  padding-bottom: 4px;
+}
+
+
+.footer-2__list {
+  @extend %list;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+}
+
+.footer-2__link {
+  @extend %link;
+  font-size: 6px;
+  font-family: "Acrom";
+  color: #65666a;
+  line-height: 16px;
+  text-align: left;
+  margin-right: 10px;
+
+}
+
+.ra-logo {
+  margin: 10px 0 0;
 }
