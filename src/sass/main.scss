@@ -1,20 +1,20 @@
 /*
  * Все паршалы импортировать в этот файл
  */
+/* helpers*/
+@import 'helpers/variables.scss';
+@import 'helpers/placeholders.scss';
+@import 'helpers/mixins.scss';
+@import 'helpers/extras.scss';
 
 @import 'normalize.scss';
 @import 'base.scss';
 
-/* helpers*/
-@import 'helpers/placeholders.scss';
-@import 'helpers/variables.scss';
-@import 'helpers/extras.scss';
-@import 'helpers/mixins.scss';
-
 /* components*/
 @import 'components/footer.scss';
+@import 'components/button.scss';
 
-/*// @import 'components/';
+/*// ';
 // @import 'components/.scss';
 // @import 'components/.scss';
 // @import 'components/.scss';
