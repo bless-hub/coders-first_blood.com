@@ -18,3 +18,15 @@ h3,
 h4 {
   text-transform: uppercase;
 }
+
+/*fonts*/
+@font-face {
+  font-family: 'Acrom';
+  font-weight: 400;
+  src: local('Acrom'), url('../../fonts/Acrom-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  src: local('Gilroy'), url('../../fonts/Gilroy-Light.woff') format('woff');
+}
