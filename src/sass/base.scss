@@ -23,10 +23,34 @@ h4 {
 @font-face {
   font-family: 'Acrom';
   font-weight: 400;
-  src: local('Acrom'), url('../../fonts/Acrom-Regular.woff') format('woff');
+  src: local('Acrom'), url('../../fonts/Acrom-Regular.woff') format('woff'),
+    url('../fonts/Acrom-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Gilroy';
   font-weight: 300;
   src: local('Gilroy'), url('../../fonts/Gilroy-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acrom';
+  font-weight: 700;
+  src: local('Acrom'), url('../../fonts/Acrom-Bold.woff') format('woff'),
+    url('../fonts/Acrom-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Acrom';
+  font-weight: 500;
+  src: local('Acrom'), url('../../fonts/Acrom-Medium.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/Acrom-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Acrom';
+  font-weight: 900;
+  src: local('Acrom'),
+    url('../../fonts/Acrom-ExtraBold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/Acrom-ExtraBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
