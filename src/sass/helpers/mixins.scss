@@ -1,5 +1,5 @@
 @mixin font-settings($size, $height, $color, $weight) {
-  font-style: $size;
+  font-size: $size;
   line-height: $height;
   color: $color;
   font-weight: $weight;
