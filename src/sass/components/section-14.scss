@@ -11,7 +11,6 @@
   display: block;
   content: "IT";
   font-size: 250px;
-  font-family: $primary-font-family;
   font-weight: 800;
   color: $tretiary-light-color;
   transform: rotate(90deg);
@@ -29,51 +28,9 @@
   bottom: 1px;
   z-index: 2;
 }
-
-.section14__list-description {
-  font-family: $primary-font-family;
-  font-weight: 700;
-  line-height: 19px;
- font-size: $paragraf-font-size;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.section14__list-text {
-  color: $secondary-dark-color;
- font-size: $paragraf-font-size;
-  padding-left: 60px;
-  line-height: 19px;
-  margin: 0;
-}
-
-
-.section14__list {
- font-size: $paragraf-font-size;
-  font-family: $primary-font-family;
-  margin: 0;
-  counter-reset: items;
-  padding: 0 60px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   flex-wrap: wrap;
-}
-
-.section14__list-item {
-  @extend %numbered-list;
-}
-
-.section14__list-name {
-  font-size: $paragraf-font-size;
-  font-family: $primary-font-family;
-  font-weight: 800;
-  color: $primary-dark-color;
-  padding: 0 75px;
-  line-height: 1.571;
-  text-align: left;
-
-}
-
+// .section__list{
+//   @extend %section__list-orange;
+// }
 .section14__title,
 .section14__subtitle,
 .section14__text,
@@ -85,7 +42,7 @@
  font-size: $paragraf-font-size;
   line-height: 16px;
   color: $primery-accent-color;
-  font-family: $primary-font-family;
+  // font-family: $primary-font-family;
   font-weight: 800;
   padding: 0 35px;
   text-decoration: none;
@@ -109,28 +66,29 @@
   text-align: center;
   padding: 0;
   font-size: 18px;
-  font-family: $primary-font-family;
+  // font-family: $primary-font-family;
   font-weight: 700;
   background-color: $primary-dark-color;
   color: $primary-white-color;
   text-transform: uppercase;
 }
 .section14__text {
-    font-size: $paragraf-font-size;
-    font-family: $primary-font-family;
+    // font-size: $paragraf-font-size;
+    font-size: 13px;
+    // font-family: $primary-font-family;
     font-weight: 500;
     color: $primary-dark-color;
     line-height: 1.444;
     text-align: left;     
-    padding: 0 95px;
+    padding: 0 85px;
 
     &::before{
     display: block;
     content: "";
     width: 20px;
-    height: 3px;
+    height: 2px;
     background: $primary-dark-color;
     float: left;
-    margin: 5px 15px 50px 0;
+    margin: 8px 15px 60px 0;
   }}
   

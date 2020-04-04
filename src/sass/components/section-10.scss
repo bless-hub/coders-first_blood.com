@@ -1,71 +1,24 @@
 .wrapper-img {
-  width: 100%;
   height: 180px;
-  text-align: center;
-  vertical-align: top;
 }
 
 .section10__img {
-  display: block;
+  object-fit: cover;
+  object-position: 100% 15%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.section10__list-name {
-  font-size: 11px;
-  font-family: $primary-font-family;
-  font-weight: 800;
-  color: $primary-dark-color;
-  padding: 0 75px;
-  //   text-transform: uppercase;
-  line-height: 1.571;
-  text-align: left;
-
 }
 
 
-.section10__list-description {
-  font-family: $primary-font-family;
-  font-weight: 700;
-   line-height: 19px;
-    font-size: $paragraf-font-size;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.section10__list-text {
-  color: $secondary-dark-color;
-  font-size: $paragraf-font-size;
-  padding-left: 60px;
-  line-height: 19px;
-  margin: 0;
-
-}
-
-
-.section10__list {
-  font-size: $paragraf-font-size;
-  font-family: $primary-font-family;
-  margin: 0;
-  counter-reset: items;
-  padding: 0 60px;
-
-  // media don't remove
-  //   display: flex;
-  //   justify-content: space-between;
-  //   flex-wrap: wrap;
-}
-
-.section10__list-item {
-  @extend %numbered-list;
-}
+// .section__list{
+//   @extend %section__list-orange;
+// }
 
 .section10__subtitle-text {
   font-size: $paragraf-font-size;
   line-height: 16px;
   color: $primery-accent-color;
-  font-family: $primary-font-family;
+  // font-family: $primary-font-family;
   font-weight: 800;
   padding: 0 45px;
 
