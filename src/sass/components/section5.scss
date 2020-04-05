@@ -1,0 +1,35 @@
+.reviews__title-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Acrom";
+    font-weight: bold;
+}
+
+.review__sub-title-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: 500;
+}
+
+.reviews__card-name {
+    font-family: "Acrom";
+    font-weight: 800;
+}
+
+.reviews__card-name:before {
+    background-image: url(images/girl-sec-5.jpg);
+}
+
+.reviews__card-text {
+    width: 434px;
+    color: #3f4144;
+    font-family: "Acrom";
+}
+
+.reviews__card--counter {
+    font-size: 7px;
+    line-height: 10px;
+    font-family: "Acrom";
+    font-weight: 800;
+}
