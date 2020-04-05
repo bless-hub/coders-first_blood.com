@@ -32,7 +32,7 @@
       @include pseudo-element('0' counter(item) '.');
       @include font-settings(16px, 20px, $primary-dark-color, 900);
       right: 284px;
-      clip: rect(auto, auto, auto, 7px);
+      clip: rect(auto, auto, auto, 4px);
     }
   }
   }

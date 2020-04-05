@@ -65,7 +65,7 @@
         @include font-settings(25px, 29px, $primary-dark-color, 900);
         right: 300px;
         bottom: 58px;
-        clip: rect(auto, auto, auto, 10px);
+        clip: rect(auto, auto, auto, 5px);
       }
     }
   }
