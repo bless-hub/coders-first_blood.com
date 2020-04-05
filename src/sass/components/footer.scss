@@ -61,24 +61,6 @@
   text-transform: uppercase;
 }
 
-.footer-button {
-  font-size: 9px;
-  font-family: "Acrom";
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: $background-color-dark;
-  color: $primary-white-color;
-  border: 0.625px solid #1b4371;
-  width: 121px;
-  height: 20px;
-
-  &:hover {
-    border: none;
-    background-color: #ff6b08;
-  }
-}
 
 /*footer-2*/
 .footer-2__wrapper {
