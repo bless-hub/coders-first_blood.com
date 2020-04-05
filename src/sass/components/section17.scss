@@ -21,8 +21,24 @@
     }
   }
 
+  &-subheader-text {
+    position: relative;
+
+    &::before {
+      content: '—';
+      @include font-settings(48px, 0px, $primary-dark-color, 400);
+      position: absolute;
+      right: 238px;
+      top: 8px;
+    }
+  }
+
   &-list {
-    @extend %list;
+    list-style: none;
+    width: 360px;
+    padding-left: 80px;
+    margin: 0;
+    counter-reset: item;
 
     &-title {
       @include font-settings(14px, 18px, $primary-dark-color, 900);
@@ -31,6 +47,26 @@
 
     &-item {
       margin-bottom: 40px;
+      position: relative;
+      
+
+      &::after {
+        @include pseudo-element();
+        right: 300px;
+        top: 30px;
+        width: 10px;
+        height: 10px;
+        background-color: $secondary--accent-color;
+      }
+
+      &::before {
+        counter-increment: item;
+        @include pseudo-element('0' counter(item) '.');
+        @include font-settings(25px, 29px, $primary-dark-color, 900);
+        right: 300px;
+        bottom: 58px;
+        clip: rect(auto, auto, auto, 10px);
+      }
     }
   }
 
@@ -99,3 +135,4 @@
     @include font-settings(8px, 12px, $color-form, 700);
   }
 }
+

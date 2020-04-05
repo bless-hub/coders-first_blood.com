@@ -3,15 +3,30 @@
   margin-bottom: 50px;
 
   &-title {
+    position: relative;
     text-align: left;
-    max-width: 345px;
-    margin: 0 auto;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
   }
 
   &-header {
     @include font-settings(18px, 24px, $primary-dark-color, 900);
     text-transform: uppercase;
     margin-bottom: 40px;
+  }
+
+  &-subheader-text {
+    position: relative;
+
+    &::before {
+      content: '—';
+      @include font-settings(48px, 0px, $primary-dark-color, 400);
+      position: absolute;
+      left: -40px;
+      top: 8px;
+    }
   }
 
   &-text {
@@ -21,16 +36,29 @@
     &--blue {
       background-color: $secondary--accent-color;
     }
+  }
 
-    &--regular {
-      font-weight: 400;
-    }
+  &--regular {
+    font-weight: 400;
   }
 
   &-list {
+    @extend %list;
     max-width: 400px;
     margin: 0 auto;
-    padding: 0px;
+
+    &-item {
+      position: relative;
+
+      &::before {
+        @include pseudo-element();
+        width: 10px;
+        height: 10px;
+        background-color: $primery-accent-color;
+        left: -18px;
+        top: 10px;
+      }
+    }
 
     &-title {
       text-transform: uppercase;
@@ -38,6 +66,7 @@
       &--big {
         @include font-settings(23px, 28px, $primary-dark-color, 900);
       }
+
       &--small {
         @include font-settings(13px, 28px, $primary-dark-color, 900);
       }
