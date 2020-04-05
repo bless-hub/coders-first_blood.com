@@ -4,7 +4,7 @@
   margin-bottom: 70px;
 
   &-header {
-display: block;
+    display: block;
     @include font-settings(18px, 24px, $primary-dark-color, 900);
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -12,10 +12,29 @@ display: block;
 
   &-list {
     @extend %list;
-  }
-
-  &-list-item {
+    counter-reset: item;
+    
+    &-item {
     margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      @include pseudo-element();
+      right: 284px;
+      top: 20px;
+      width: 7px;
+      height: 7px;
+      background-color: $secondary--accent-color;
+    }
+
+    &::before {
+      counter-increment: item;
+      @include pseudo-element('0' counter(item) '.');
+      @include font-settings(16px, 20px, $primary-dark-color, 900);
+      right: 284px;
+      clip: rect(auto, auto, auto, 4px);
+    }
+  }
   }
 
   &-list-title {
@@ -28,7 +47,15 @@ display: block;
   }
 
   &-color-text {
+    position: relative;
     @include font-settings(14px, 20px, $primery-accent-color, 500);
     margin-bottom: 34px;
+
+    &::before {
+      @include pseudo-element('/');
+      @include font-settings(26px, 1, $primary-dark-color, 300);
+      right: 262px;
+      top: -3px;
+    }
   }
 }

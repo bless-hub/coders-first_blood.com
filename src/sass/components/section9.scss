@@ -1,23 +1,74 @@
 .section9 {
+  position: relative;
   max-width: 370px;
   margin: 0 auto;
   font-family: $primary-font-family;
   margin-bottom: 50px;
 
+  &::before {
+    @include pseudo-element('4');
+    @include font-settings(207px, 1, $tretiary-light-color, 900);
+    left: 8px;
+  }
+
+  &::after {
+    @include pseudo-element('stap');
+    @include font-settings(60px, 76px, $tretiary-light-color, 900);
+    bottom: 346px;
+    left: 80px;
+    transform: rotate(90deg);
+  }
+
+
   &-header {
     @include font-settings(18px, 24px, $primary-dark-color, 900);
     text-transform: uppercase;
     margin-bottom: 40px;
+    width: 200px;
+    text-align: left;
+    margin-left: 10px;
+
+    &-span {
+      margin-left: 10px;
+    }
   }
 
   &-title {
-    text-align: center;
-    max-width: 320px;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    max-width: 280px;
+    margin-bottom: 60px;
+    z-index: 1;
   }
 
   &-list {
-    max-width: 400px;
+    @extend %list;
+    max-width: 250px;
     margin: 0 auto;
+    counter-reset: item;
+
+    &-item {
+      position: relative;
+
+      &::after {
+        @include pseudo-element();
+        right: 265px;
+        top: 28px;
+        width: 10px;
+        height: 10px;
+        background-color: $secondary--accent-color;
+      }
+
+      &::before {
+        counter-increment: item;
+        @include pseudo-element('0' counter(item) '.');
+        @include font-settings(25px, 29px, $primary-dark-color, 900);
+        left: -50px;
+        top: -5px;
+        clip: rect(5px auto auto 5px);
+      }
+    }
 
     &-title {
       @include font-settings(14px, 22px, $primary-dark-color, 900);
@@ -35,7 +86,15 @@
   }
 
   &-color-text {
+    position: relative;
     @include font-settings(15px, 20px, $primery-accent-color, 500);
+
+    &::before {
+      @include pseudo-element('/');
+      @include font-settings(42px, 1, $primary-dark-color, 300);
+      right: 372px;
+      top: -2px;
+    }
   }
 }
 
