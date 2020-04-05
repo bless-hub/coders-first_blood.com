@@ -1,35 +1,144 @@
 .reviews__title-text {
     font-size: 18px;
     line-height: 24px;
+    color: #000000;
     font-family: "Acrom";
     font-weight: bold;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 42px;
 }
 
 .review__sub-title-text {
+    width: 272px;
     font-size: 14px;
     line-height: 20px;
+    color: #000000;
     font-family: "Acrom";
     font-weight: 500;
+    margin: 0 auto;
+
+    &::before {
+        position: absolute;
+        float: left;
+        content: "";
+        width: 2px;
+        height: 19px;
+        background-color: #000000;
+        border: 1.5625px solid #000000;
+        transform: rotate(90deg);
+        margin: 0 0 0 -19px;
+    }
+}
+
+.review-sub {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.reviews__card {
+    width: 293px;
+    height: 212px;
+    filter: drop-shadow(0px 8px 7px rgba(0,0,0,0.15));
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 16px;
+    margin-bottom: 65px;
+
+    &::after{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 212px;
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 262px;
+        margin-top: -228px;
+    }
 }
 
 .reviews__card-name {
+    width: 56px;
+    font-size: 5px;
+    line-height: 9px;
+    color: #000000;
     font-family: "Acrom";
     font-weight: 800;
-}
-
-.reviews__card-name:before {
-    background-image: url(images/girl-sec-5.jpg);
 }
 
 .reviews__card-text {
-    width: 434px;
+    position: absolute;
+    width: 165px;
+    height: 180px;
+    font-size: 6px;
+    line-height: 9px;
     color: #3f4144;
     font-family: "Acrom";
+    margin-left: 70px;
+    margin-top: -92px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 26px;
+        border-radius: 1px;
+        background-color: #000000;
+        margin-left: 127px;
+        margin-top: -20px;
+    }
 }
 
 .reviews__card--counter {
+    display: block;
     font-size: 7px;
     line-height: 10px;
+    color: #000000;
     font-family: "Acrom";
     font-weight: 800;
+    margin-top: 120px;
+}
+
+.card-counter {
+    font-size: 9px;
+    font-weight: 900;
+
+    &::before {
+        position: absolute;
+        float: left;
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: #000000;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+    }
+}
+
+.reviews__card--button {
+    padding: 0;
+    float: right;
+    margin-top: -17px;
+    margin-right: -16px;
+}
+
+.button-left {
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    padding: 0;
+    border: none;
+    margin-right: -3px;
+    cursor: pointer;
+}
+
+.button-right {
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    border: none;
+    margin: 0;
+    cursor: pointer;
 }
