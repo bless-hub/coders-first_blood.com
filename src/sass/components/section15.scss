@@ -1,0 +1,34 @@
+.section15 {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  &-header {
+display: block;
+    @include font-settings(18px, 24px, $primary-dark-color, 900);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    @extend %list;
+  }
+
+  &-list-item {
+    margin-bottom: 30px;
+  }
+
+  &-list-title {
+    @include font-settings(14px, 20px, $primary-dark-color, 900);
+    text-transform: uppercase;
+  }
+
+  &-text {
+    @include font-settings(14px, 20px, $primary-dark-color, 400);
+  }
+
+  &-color-text {
+    @include font-settings(14px, 20px, $primery-accent-color, 500);
+    margin-bottom: 34px;
+  }
+}
