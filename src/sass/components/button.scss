@@ -13,6 +13,7 @@
   margin: 0 auto;
   border: 1px solid $primery-accent-color;
 
+
   &:hover {
     background-color: $secondary--accent-color;
     border: 1px solid $secondary--accent-color;
@@ -60,3 +61,61 @@
     width: 295px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+// .button {
+//   @include font-settings(10px, 42px, $primary-white-color, 900);
+//   width: 218px;
+//   height: 42px;
+//   font-family: $primary-font-family;
+//   background-color: $primery-accent-color;
+//   color: $primary-white-color;
+//   border: none;
+//   cursor: pointer;
+//   box-shadow: 0 7px 10px rgba($color-shadow-button, 0.25);
+//   text-transform: uppercase;
+//   text-align: center;
+//   margin: 0 auto;
+//   outline: 1.25px solid $primery-accent-color;
+
+//   &:hover {
+//     background-color: $secondary--accent-color;
+//     outline: 1px solid $secondary--accent-color;
+//     box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25);
+//   }
+
+//   &:focus {
+//     background-color: $tretiary-accent-color;
+//     outline: 1px solid $tretiary-accent-color;
+//     box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25); 
+//     border: none;
+//   }
+  
+//   &-footer {
+//     @include font-settings(9px, 31px, $primary-white-color, 900);
+//     outline: 1.25px solid $tretiary-dark-color;
+//     border: none;
+//     width: 137px;
+//     height: 31px;
+//     background-color: rgba ($background-color-dark, 0);
+
+//     &:hover,
+//     :focus {
+//       background-color: $secondary--accent-color;
+//       border: 1, 25px solid $secondary--accent-color;
+//       box-shadow: none;
+//     }
+//   }
+   
+//   &-section-18 {
+//     width: 295px;
+//   }
+// }
