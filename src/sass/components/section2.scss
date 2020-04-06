@@ -4,6 +4,7 @@
   font-style: 13.5;
   margin-bottom: 25px;
 }
+
 .section2-header {
   font-family: $primary-font-family;
   font-style: 15px;
@@ -11,6 +12,12 @@
   width: 350px;
   margin-bottom: 15px;
   margin-top: 45px;
+}
+
+.section2-img {
+  width: 450px;
+  height: 130px;
+  object-fit: cover;
 }
 
 .section2-subtitle {
