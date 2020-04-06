@@ -1,3 +1,6 @@
+.section16{
+  margin-bottom: 88px;
+}
 .section16__img {
   object-fit: cover;
   object-position: 100% 15%;
@@ -7,58 +10,75 @@
 
 .img-wrapper {
   height: 167px;
+  margin-bottom: 50px;
 }
+
+.img-wrapper2 {
+  height: 201px;
+  padding-right: 20px;
+}
+.section16__wrapper{
+  margin-bottom: 40px;
+  }
+
 .section16__title {
   font-size: 18px;
 }
+
 .section16__text {
   width: 389px;
-      text-align: left; 
-    font-size: $paragraf-font-size;
-    font-weight: 700;  
-    text-transform: uppercase;
-    line-height: 20px;
+  text-align: left;
+  font-size: $paragraf-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
 }
+
 .mark1 {
   background-color: #000;
   color: #ffffff;
 }
-// .section__list{
-//   @extend %section__list-orange;
-// }
+
+.section16__list-name {
+  font-size: $paragraf-font-size;
+  margin-left: 30px;
+}
+
 .section16__title,
 .section16__subtitle,
 .section16__text,
 .section16__subtext {
   padding: 0 75px;
-}
-
-.section16__price {
-  font-size: 1.5rem;
-  padding: 0 75px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-}
-
-.section16__price-text {
-  line-height: 1.9;
-  margin-bottom: 56px;
-  font-size: 17px;
-  // font-family: $primary-font-family;
-  font-weight: 500;
+  margin-top: 0;
 }
 
 .mark2 {
   background-color: $secondary--accent-color;
 }
 
+/*price*/
+.section16__price {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.section16__price-text {
+  line-height: 1.7;
+  margin-left: 15px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .section16__price-value {
   font-size: 17px;
   color: #3c3b40;
-  // font-family: $primary-font-family;
   font-weight: 800;
+  text-transform: uppercase;
   text-decoration: line-through;
+  text-decoration-color: rgba($color: #3c3b40, $alpha: 0.4);
   margin: 0;
 
 }
@@ -74,7 +94,6 @@
   font-size: 36px;
   margin: 0;
   color: $primary-dark-color;
-  // font-family: $primary-font-family;
   font-weight: 800;
 }
 
@@ -83,4 +102,165 @@
   flex-wrap: wrap;
   width: 130px;
   height: 80px;
+}
+
+
+
+@media(max-width: 767px) {
+  .img-wrapper2 {
+    display: none;
+  }
+
+}
+
+@media(min-width:768px) {
+  .section16{
+    margin-bottom: 99px;
+  }
+  .section16__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .section16__title {
+    font-size: 27px;
+    padding: 0;
+  }
+
+  .img-wrapper {
+    height: 169px;
+    padding-right: 50px;
+  }
+
+
+
+  .section16__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section16-block-wrap {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  .section16__text {
+    width: 96px;
+    padding: 0;
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .section16__subtext {
+    width: 182px;
+    font-size: 9px;
+    line-height: 12px;
+    flex-grow: 2;
+    padding: 0 15px 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .section16__list-name {
+    font-size: 9px;
+    width: 140px;
+    padding-right: 35px;
+    margin: 0;
+  }
+
+  /*price*/
+  .section16__price {
+    padding: 0;
+    margin: 18px 0 0 5px;
+  }
+
+  .section16__price-text {
+    margin: 0;
+    font-size: 8px;
+  }
+
+
+  .section16__price-value {
+    font-size: 8px;
+  }
+
+  .section16__price-value-new span {
+    font-size: 9px;
+  }
+
+  .section16__price-value-new {
+    font-size: 17px;
+  }
+
+  .value {
+    width: 65px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+
+}
+
+@media(min-width: 1200px) {
+  .section16{
+    margin-bottom: 124px;
+  }
+  .img-wrapper {
+    height: 188px;
+  }
+
+  .img-wrapper2 {
+    height: 227px;
+  }
+
+  .section16__title {
+    font-size: 30px;
+  }
+
+  .section16-block-wrap {
+    width: 350px;
+  }
+
+  .section16__text {
+    width: 109px;
+    font-size: 10px;
+  }
+
+  .section16__subtext {
+    padding: 0 45px 0 20px;
+  }
+
+  .section16__list-name {
+    font-size: 10px;}
+
+
+
+  /*price*/
+
+  .section16__price-text {
+    font-size: 9px;
+  }
+
+
+  .section16__price-value {
+    font-size: 9px;
+  }
+
+  .section16__price-value-new span {
+    font-size: 10px;
+  }
+
+  .section16__price-value-new {
+    font-size: 19px;
+  }
+
+
+
+
+
 }
