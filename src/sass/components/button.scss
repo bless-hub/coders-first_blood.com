@@ -5,42 +5,62 @@
   font-family: $primary-font-family;
   background-color: $primery-accent-color;
   color: $primary-white-color;
-  border: none;
+  outline: none;
   cursor: pointer;
   box-shadow: 0 7px 10px rgba($color-shadow-button, 0.25);
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  display: block;
-  outline: 1.25px solid $primery-accent-color;
+  border: 1px solid $primery-accent-color;
+
 
   &:hover {
     background-color: $secondary--accent-color;
-    outline: 1px solid $secondary--accent-color;
+    border: 1px solid $secondary--accent-color;
     box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25);
+    outline: none;
   }
 
   &:focus {
     background-color: $tretiary-accent-color;
-    outline: 1px solid $tretiary-accent-color;
-    box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25); 
-    border: none;
+    border: 1px solid $tretiary-accent-color;
+    box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25);
+    outline: none;
   }
-  
-  &-footer {
-    @include font-settings(9px, 31px, $primary-white-color, 900);
-    outline: 1.25px solid $tretiary-dark-color;
-    border: none;
-    width: 137px;
-    height: 31px;
-    background-color: rgba ($background-color-dark, 0);
 
-    &:hover,
-    :focus {
-      background-color: $secondary--accent-color;
-      border: 1, 25px solid $secondary--accent-color;
+  &-form {
+    margin-left: 64px;
+  }
+
+  &-footer {
+    @include font-settings(9px, 20px, $primary-white-color, 900);
+    border: 0.5px solid $tretiary-dark-color;
+    margin-top: 15px;
+    outline: none;
+    width: 127px;
+    height: 22px;
+    background-color: $background-color-dark;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $color-shadow-hover;
+      border: 0.625px solid $color-shadow-hover;
       box-shadow: none;
+      outline: none;
     }
+    
+    &:focus {
+      background-color: $quadruple-accent-color;
+      border: 0.5px solid $quadruple-accent-color;
+      outline: none;
+      box-shadow: none;
+      font-weight: 500;
+    }
+  }
+
+  &-section-10{
+    margin-bottom: 80px;
+  
   }
    
   &-section-18 {

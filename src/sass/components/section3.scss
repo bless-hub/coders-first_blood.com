@@ -1,0 +1,75 @@
+.section3 {
+  font-family: $primary-font-family;
+  margin-bottom: 50px;
+
+  &-title {
+    position: relative;
+    text-align: left;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  &-header {
+    @include font-settings(18px, 24px, $primary-dark-color, 900);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &-subheader-text {
+    position: relative;
+
+    &::before {
+      content: '—';
+      @include font-settings(48px, 0px, $primary-dark-color, 400);
+      position: absolute;
+      left: -40px;
+      top: 8px;
+    }
+  }
+
+  &-text {
+    text-align: left;
+    @include font-settings(14px, 20px, $primary-dark-color, 500);
+
+    &--blue {
+      background-color: $secondary--accent-color;
+    }
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &-list {
+    @extend %list;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &-item {
+      position: relative;
+
+      &::before {
+        @include pseudo-element();
+        width: 10px;
+        height: 10px;
+        background-color: $primery-accent-color;
+        left: -18px;
+        top: 10px;
+      }
+    }
+
+    &-title {
+      text-transform: uppercase;
+
+      &--big {
+        @include font-settings(23px, 28px, $primary-dark-color, 900);
+      }
+
+      &--small {
+        @include font-settings(13px, 28px, $primary-dark-color, 900);
+      }
+    }
+  }
+}
