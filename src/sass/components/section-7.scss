@@ -45,12 +45,12 @@
   }
 }
 
-
 .section7_span {
     font-weight: 900;
     color: $primary-white-color;
     background-color: $primary-dark-color;
     text-transform: uppercase;
+    width: 180px;
 }
 
 .section7_text-bold {
@@ -58,39 +58,110 @@
 }
 
 @media(min-width:768px) {
+  .section7 {
+    margin-bottom: 54px;
+  }
+
   .section7_heading {
     font-size: 27px;
     line-height: 34px;
-  }
-
-  .section7 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
   }
 
   .section7_img {
     width: 276px;
   }
 
-  .section7-wrap-before {
-    width: 276px;
-    margin: 0;
+  .section7_img1 {
+    float: right;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+  .section7-wrap {
+    float: right;
+    width: 300px;
+    margin-bottom: 30px;
     padding: 0;
   }
 
-  .section7_img1 {
+  .section7-wrap-before {
+    float: left;
+    width: 220px;
+    margin: 0 0 26px;
+    padding-right: 0;
   }
 
   .section7_img2 {
     float: left;
   }
 
-  .section7-wrap {
-    width: 310px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+  .section7_text,
+  .section7_text-bold {
+    font-size: 9px;
+    line-height: 14px;
+    margin-top: 0;
+  }
+
+  .section7_text-small {
+    font-size: 8px;
+    line-height: 12px;
+    margin: 0;
+  }
+
+  .section7_span {
+    font-size: 9px;
+    line-height: 15px;
+    float: left;
+    width: 110px;
+    
+  }
+
+  .section7-aside {
+    width: 300px;
+  }
+
+  .section7_text-wrap {
     float: right;
+    width: 168px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section7_heading {
+    font-size: 30px;
+    line-height: 38px;
+    width: 200px;
+  }
+
+  .section7_text,
+  .section7_text-bold {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .section7_text-small {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .section7_span {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  
+  .section7-wrap-before {
+    width: 240px;
+  }
+  
+  .section7_text {
+    padding: 0;
+  }
+
+  .section7-aside {
+    width: 350px;
   }
 }
