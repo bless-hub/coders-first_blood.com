@@ -1,7 +1,10 @@
+.section2 {
+  margin-bottom: 75px;
+}
 .section2-text {
   font-family: $primary-font-family;
   font-weight: 700;
-  font-style: 13.5;
+  font-style: 14px;
   margin-bottom: 25px;
 }
 
@@ -61,4 +64,114 @@
   text-align: center;
   color: $primery-accent-light;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .section2 {
+    margin-bottom: 50px;
+  }
+  .section2-img {
+    width: 260px;
+    height: 240px;
+    object-fit: cover;
+    float: left;
+  }
+
+  .section2-text {
+    width: 205px;
+    margin: 0;
+    float: right;
+    font-size: 9px;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-right: 90px;
+  }
+  .section2-header {
+    float: right;
+    width: 160px;
+    margin: 0;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-right: 135px;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: $primary-dark-color;
+      float: left;
+      margin: 3px 15px 15px 0;
+    }
+  }
+  .section2-subtitle {
+    float: right;
+    margin-right: 72px;
+    width: 225px;
+    font-size: 27px;
+  }
+
+  .section2-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    font-size: 9px;
+  }
+
+  .section2__list-item {
+    width: 125px;
+  }
+  & .section2__list-item:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+  .section2-listname {
+    font-size: 18px;
+  }
+
+  .clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .section2-subtitle-text {
+    font-size: 10px;
+    text-align: justify;
+    width: 180px;
+    margin-left: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section2-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: 245px;
+    margin: 0;
+  }
+  .abb {
+    margin-bottom: 70px;
+  }
+
+  .section2__list-item {
+    width: 160px;
+    padding: 0;
+    margin: 0;
+  }
+  .section2-listname {
+    float: left;
+    margin: 0;
+    margin-right: 90px;
+  }
+  .section2__column {
+    position: relative;
+  }
+  .section2-subtitle-text {
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+    width: 145px;
+    text-align: left;
+  }
 }
