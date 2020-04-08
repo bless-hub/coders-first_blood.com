@@ -38,3 +38,27 @@
 .section7_text-bold {
     font-weight: 700;
 }
+
+@media(min-width:768px) {
+    .section7-wrap {
+        float: left;
+    }
+
+    .section7_img {
+        width: 276px;
+    }
+
+    .section7_img1 {
+        float: right;
+    }
+
+    .section7_img2 {
+        float: left;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      } 
+}
