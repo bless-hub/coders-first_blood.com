@@ -97,3 +97,20 @@
     list-style-position: inside;
   }
 }
+
+@media (min-width: 1200px) {
+  .section8_text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  
+  .section8_list-text {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .section8_subheading {
+    font-size: 10px;
+  }
+
+}
