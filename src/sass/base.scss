@@ -27,6 +27,13 @@ h4 {
   }
 }
 
+@media (min-width: 1200px) {
+  h2{
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
 /*fonts*/
 @font-face {
   font-family: 'Acrom';
