@@ -2,4 +2,24 @@
   width: 480px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 670px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 744px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 744px;
+  }
 }
