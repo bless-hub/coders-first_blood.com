@@ -1,7 +1,4 @@
 .action-card {
-    width: 227px;
-    text-align: center;
-    margin-left: 100px;
 
     &:before {
         position: absolute;
@@ -43,7 +40,6 @@
 }
 
 .action-afterword{
-    width: 300px;
     margin: 0 auto;
 }
 
@@ -76,4 +72,115 @@
     color: #ff6b08;
     font-family: "Acrom";
     font-weight: 500;
+}
+
+@media (max-width: 767px) {
+
+    .action-card {
+        text-align: center;
+        width: 227px;
+        margin-left: 100px;
+    }
+
+    .action-afterword {
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .action {
+        width: 670px;
+        display: flex;
+        flex-direction: row;
+
+        
+    }
+
+    .action-card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+
+        &:before {
+            font-size: 146px;
+            line-height: 117px;
+            margin-left: 125px;
+            margin-top: 70px;
+            z-index: 0;
+        }
+    }
+
+    .action-text {
+        font-size: 27px;
+        line-height: 34px;
+        margin-bottom: 16px;
+        z-index: 1;
+    }
+
+    .action-card-sub-text {
+        width: 188px;
+        font-size: 9px;
+        line-height: 13px;
+        padding-bottom: 20px;
+        margin-left: 45px;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 28px;
+            height: 3px;
+            background-color: #000000;
+            margin-top: 5px;
+            margin-left: -40px;
+        }
+    }
+
+    .action-button {
+        width: 145px;
+        height: 27px;
+        font-size: 7px;
+        letter-spacing: 1px;
+        line-height: 10px;
+        z-index: 1;
+        margin-left: 45px;
+    }
+
+    .action-afterrword-text {
+        font-size: 17px;
+        line-height: 20px;
+        transform: translate(-40%, 50%);
+    }
+
+    .action-sub-text {
+        transform: translate(-15%, -12%);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .afterword-sub-text-bold {
+        width: 229px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .afterword-sub-text {
+        width: 198px;
+        font-size: 8px;
+        line-height: 12px;
+        padding-bottom: 20px;
+    }
+
+    .afterword-sub {
+        font-size: 8px;
+        line-height: 12px
+    }
+
+    .afterword-sub-color {
+        font-size: 9px;
+        line-height: 13px;
+    }
 }
