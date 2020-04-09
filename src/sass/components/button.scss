@@ -92,6 +92,7 @@
     @include font-settings(12px, 48px, $primary-white-color, 900);
     height: 52px;
     width: 218px;
+    margin-right: 20px;
 
     @media (min-width: 768px) and (max-width: 1199px) {
       width: 123px;
