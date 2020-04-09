@@ -184,3 +184,52 @@
         line-height: 13px;
     }
 }
+
+@media (min-width: 1200px) {
+
+    .action {
+        width: 744px;
+    }
+
+    .action-text {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .action-card-sub-text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .action-button {
+        width: 163px;
+        height: 32px;
+    }
+
+    .action-afterrword-text {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .afterword-sub-text-bold {
+        width: 255px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .afterword-sub-text {
+        width: 235px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .afterword-sub {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .afterword-sub-color {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
