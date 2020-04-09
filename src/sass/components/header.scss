@@ -58,7 +58,7 @@
     font-size: 30px;
     line-height: 39px;
     text-align: center;
-    width: 250px;
+    width: 255px;
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -126,7 +126,15 @@
 }
 
 @media (max-width: 767px) {
-    .bg-img_container, .socials {
+    .bg-img_container, 
+    .socials, 
+    .header_counter1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header_counter2 {
         display: none;
     }
 }
@@ -134,9 +142,6 @@
 @media (min-width: 768px) {
     .header_container {
         height: 476px;
-    }
-
-    .header_container {
         position: relative;
 
         &::after {
@@ -164,14 +169,13 @@
         object-fit: cover;
     }
 
-    .header_wrap {
-        
-        &::after {
-            content: '01 \005F';
+    .header_counter1 {
+        width: 40px;
+        height: 15px;
+        transform: rotate(-90deg);
+
+        & span {
             font-size: 13px;
-            color: $primary-white-color;
-            position: relative;
-            left: 0;
         }
     }
 
@@ -179,8 +183,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 94px;
-        
+        margin-bottom: 20px;
     }
     
     .header_heading {
@@ -188,14 +191,27 @@
         line-height: 56px;
         width: 356px;
         margin-right: 100px;
+        text-align: left;
+
+        & span {
+          display: block;
+        }
+
+        & span::before {
+            content: '\2014';
+        }
+    
     }
 
     .header_text-wrap {
         width: 240px;
         margin: 0;
+        padding-left: 40px;
+        
 
         &::before {
             font-size: 13px;
+            padding-left: 20px;
         }
 
         &::after {
@@ -232,7 +248,7 @@
     }
 
     .flex_item3 {
-        padding-left: 16px;
+        padding-left: 40px;
     }
 
     .button_header {
@@ -247,20 +263,24 @@
     display: flex;
     justify-content: flex-end;
 
-    & a:nth-child(1) {
-        margin-right: 20px;
+    & li:nth-child(1) {
+        margin-right: 10px;
     }
 
     & svg {
         display: block;
         width: 10px;
-        height: 10px;
+        height: 15px;
         fill: white;
     }
   }
 }
 
 @media (min-width: 1200px) {
+    .header_container {
+        height: 530px;
+    }
+
     .header_heading {
         font-size: 50px;
         line-height: 63px;
@@ -279,6 +299,14 @@
 
     .header_text-grey {
         line-height: 15px;
+    }
+
+    .header_counter1 {
+        font-size: 15px;
+    }
+
+    .header_counter2 {
+        font-size: 9px;
     }
 }
 
