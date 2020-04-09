@@ -4,7 +4,7 @@
   margin: 0 auto;
   font-family: $primary-font-family;
   margin-bottom: 50px;
-
+  
   &::before {
     @include pseudo-element('4');
     @include font-settings(207px, 1, $tretiary-light-color, 900);
@@ -14,11 +14,53 @@
   &::after {
     @include pseudo-element('stap');
     @include font-settings(60px, 76px, $tretiary-light-color, 900);
-    bottom: 346px;
+    top: 65px;
     left: 80px;
     transform: rotate(90deg);
   }
 
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 769px) and (max-width: 1199px) {
+    min-width: 640px;
+    margin-bottom: 76px;
+
+    &::before {
+      @include font-settings(299px, 1, $tretiary-light-color, 900);
+      left: 122px;
+      top: -50px;
+    }
+
+    &::after {
+      @include font-settings(106px, 108px, $tretiary-light-color, 900);
+      top: 50px;
+      left: 220px;
+      transform: rotate(90deg);
+      font-size: 106px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 714px;
+    margin-bottom: 100px;
+
+    &::before {
+      @include font-settings(333px, 1, $tretiary-light-color, 900);
+      left: 122px;
+      top: -50px;
+    }
+
+    &::after {
+      @include font-settings(115px, 1, $tretiary-light-color, 900);
+      top: 60px;
+      left: 220px;
+      transform: rotate(90deg);
+
+    }
+  }
 
   &-header {
     @include font-settings(18px, 24px, $primary-dark-color, 900);
@@ -26,10 +68,23 @@
     margin-bottom: 40px;
     width: 200px;
     text-align: left;
-    margin-left: 10px;
+    padding-left: 10px;
+    @media (min-width: 768px) {
+      padding: 0px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      @include font-settings(27px, 34px, $primary-dark-color, 900);
+    }
+
+    @media (min-width: 1200px) {
+      @include font-settings(30px, 38px, $primary-dark-color, 900);
+    }
 
     &-span {
-      margin-left: 10px;
+      padding-left: 10px;
+      @media (max-width: 767px) {
+        display: block;
+      }
     }
   }
 
@@ -40,6 +95,57 @@
     max-width: 280px;
     margin-bottom: 60px;
     z-index: 1;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      max-width: 205px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 226px;
+    }
+  }
+
+  &-subheader-text {
+    position: relative;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      &::before {
+        content: '—';
+        @include font-settings(58px, 0px, $primary-dark-color, 400);
+        position: absolute;
+        left: 0px;
+        top: 8px;
+      }
+
+      max-width: 168px;
+      padding-left: 48px;
+      @include font-settings(9px, 14px, $primary-dark-color, 500);
+    }
+
+    @media (min-width: 1200px) {
+      &::before {
+        content: '—';
+        @include font-settings(54px, 0px, $primary-dark-color, 400);
+        position: absolute;
+        left: 0px;
+        top: 8px;
+      }
+      max-width: 193px;
+      padding-left: 53px;
+      @include font-settings(10px, 15px, $primary-dark-color, 900);
+    }
+    @media (max-width: 767px) {
+      &::before {
+        content: '—';
+        @include font-settings(48px, 0px, $primary-dark-color, 400);
+        position: absolute;
+        left: -40px;
+        top: 8px;
+      }
+    }
   }
 
   &-list {
@@ -48,13 +154,51 @@
     margin: 0 auto;
     counter-reset: item;
 
+    @media (min-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      max-width: 312px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 348px;
+    }
+
     &-item {
       position: relative;
+      min-height: 86px;
+      z-index: 2;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        width: 150px;
+        min-height: 80px;
+        padding-left: 40px;
+        margin-bottom: 28px;
+
+        &:nth-of-type(n + 3) {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        width: 165px;
+        padding-left: 42px;
+        margin-bottom: 30px;
+        min-height: 86px;
+      }
+    }
+
+    &-title {
+      @include font-settings(14px, 22px, $primary-dark-color, 900);
+      text-transform: uppercase;
+      
 
       &::after {
         @include pseudo-element();
         right: 265px;
-        top: 28px;
+        top: 30px;
         width: 10px;
         height: 10px;
         background-color: $secondary--accent-color;
@@ -64,24 +208,70 @@
         counter-increment: item;
         @include pseudo-element('0' counter(item) '.');
         @include font-settings(25px, 29px, $primary-dark-color, 900);
-        left: -50px;
-        top: -5px;
-        clip: rect(5px auto auto 5px);
+        right: 265px;
+        top: -2px;
+        clip: rect( auto auto auto 12px);
       }
-    }
 
-    &-title {
-      @include font-settings(14px, 22px, $primary-dark-color, 900);
-      text-transform: uppercase;
+      @media (min-width: 768px) {
+        margin-top: 0px;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        @include font-settings(9px, 14px, $primary-dark-color, 900);
+        padding-right: 35px;
+
+        &::after {
+          @include pseudo-element();
+          right: 128px;
+          top: 22px;
+          width: 10px;
+          height: 10px;
+          background-color: $secondary--accent-color;
+        }
+
+        &::before {
+          @include font-settings(17px, 20px, $primary-dark-color, 900);
+          right: 128px;
+          top: -2px;
+          clip: rect(auto auto auto 8px);
+        }
+      }
+      @media (min-width: 1200px) {
+        @include font-settings(10px, 16px, $primary-dark-color, 900);
+        padding-right: 43px;
+
+        &::after {
+          right: 134px;
+          top: 22px;
+          width: 10px;
+          height: 10px;
+        }
+
+        &::before {
+          @include font-settings(19px, 22px, $primary-dark-color, 900);
+          right: 130px;
+          bottom: 30px;
+          clip: rect( auto auto auto 9px);
+        }
+      }
     }
   }
 
   &-text {
     text-align: left;
     @include font-settings(14px, 20px, $primary-dark-color, 500);
+    order: 2;
 
     &--regular {
       font-weight: 400;
+      color: $secondary-dark-color;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        @include font-settings(8px, 12px, $secondary-dark-color, 400);
+      }
+      @media (min-width: 1200px) {
+        @include font-settings(9px, 14px, $secondary-dark-color, 400);
+      }
     }
   }
 
@@ -94,6 +284,29 @@
       @include font-settings(42px, 1, $primary-dark-color, 300);
       right: 372px;
       top: -2px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      @include font-settings(9px, 14px, $primery-accent-color, 500);
+      margin-top: 0;
+      max-width: 312px;
+      padding-left: 38px;
+
+      &::before {
+        @include font-settings(32px, 1, $primary-dark-color, 900);
+        right: 290px;
+        top: -2px;
+      }
+    }
+    @media (min-width: 1200px) {
+      @include font-settings(10px, 15px, $primery-accent-color, 500);
+      max-width: 348px;
+      margin-top: 0;
+      padding-left: 43px;
+      &::before {
+        @include font-settings(34px, 1, $primary-dark-color, 900);
+        right: 320px;
+        top: -2px;
+      }
     }
   }
 }

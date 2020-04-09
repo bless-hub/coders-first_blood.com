@@ -1,0 +1,205 @@
+.awards__title-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "Acrom";
+    font-weight: bold;
+    margin-left: 53px;
+}
+
+.awards-item {
+    list-style: none;
+    width: 360px;
+    margin: 0 auto;
+} 
+
+.awards-item-text-bold {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "Acrom";
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+}
+
+.awards-item-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3f4144;
+    font-family: "Acrom";
+    margin-bottom: 40px;
+}
+
+.awards-img {
+    margin: 0 auto;
+    min-width: 100%;
+}
+
+.awards__sub-title-text {
+    width: 273px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "Acrom";
+    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 62px;
+
+    &::before {
+        position: absolute;
+        float: left;
+        content: "";
+        width: 2px;
+        height: 19px;
+        background-color: #000000;
+        border: 1.5625px solid #000000;
+        transform: rotate(90deg);
+        margin: 0 0 0 -19px;
+    }
+}
+
+.awards__list {
+    width: 300px;
+    list-style: none;
+    margin: 0 auto;
+    
+    padding: 0;
+}
+
+.awards__list--text {
+    margin-top: 38px;
+}
+
+.awards-list-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Acrom";
+    font-weight: 500;
+    background-color: #000000;
+    
+}
+
+.card-name {
+    width: 189px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "Acrom";
+    font-weight: 800;
+    margin-top: 33px;
+    margin-bottom: 0;
+}
+
+.list-card-text-oon {
+    width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3f4144;
+    font-family: "Acrom";
+}
+
+.awards-list-img {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 220px;
+}
+
+.list-card-text {
+    width: 235px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3f4144;
+    font-family: "Acrom";
+}
+
+.list-card-text-ua {
+    width: 264px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3f4144;
+    font-family: "Acrom";
+}
+
+.list-card-name {
+    width: 172px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "Acrom";
+    font-weight: 800;
+}
+
+.ua {
+    
+    &:after { 
+        position: absolute;
+        content: "01_";
+        margin-left: 170px;
+        margin-top: -20px;
+        text-align: center;
+        width: 42px;
+        height: 79px;
+        font-size: 39px;
+        line-height: 14px;
+        color: rgba(191, 191, 191, 0.3);
+        transform: rotate(270deg);
+        font-family: "Futura";
+        font-weight: bold;
+    }
+
+}
+
+.ua-it{
+
+    &::after{
+        position: absolute;
+        content: "02_";
+        margin-left: 170px;
+        margin-top: -20px;
+        text-align: center;
+        width: 42px;
+        height: 79px;
+        font-size: 39px;
+        line-height: 14px;
+        color: rgba(191, 191, 191, 0.3);
+        transform: rotate(270deg);
+        font-family: "Futura";
+        font-weight: bold;
+    }
+}
+
+.best-ua-it {
+
+    &::after {
+        position: absolute;
+        content: "03_";
+        margin-left: 170px;
+        margin-top: -20px;
+        text-align: center;
+        width: 42px;
+        height: 79px;
+        font-size: 39px;
+        line-height: 14px;
+        color: rgba(191, 191, 191, 0.3);
+        transform: rotate(270deg);
+        font-family: "Futura";
+        font-weight: bold;
+    }
+}
+
+.awards-card-list-text {
+    font-weight: 900;
+}
+
+.awards-card-img-ua {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 260px;
+}
+
+.awards-card-img {
+    position: absolute;
+    margin-left: 235px;
+}
