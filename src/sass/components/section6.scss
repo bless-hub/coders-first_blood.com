@@ -2,7 +2,6 @@
   margin: 0 auto;
 }
 .section6-header {
-  font-family: $primary-font-family;
   font-size: 18px;
   font-weight: 700;
   width: 210px;
@@ -11,8 +10,6 @@
   margin-bottom: 25px;
 }
 .section6-subtitle {
-  font-family: $primary-font-family;
-  font-size: 14px;
   font-weight: 700;
   width: 280px;
   margin: 0 auto;
@@ -30,9 +27,7 @@
 }
 
 .section6-list {
-  font-family: $primary-font-family;
   color: $primary-dark-color;
-  font-size: 14px;
   font-weight: 700;
 
   & p {
@@ -114,9 +109,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .section6-header {
-    font-size: 30px;
-  }
   .section6__list-description,
   .section6-subtitle {
     font-size: 10px;
