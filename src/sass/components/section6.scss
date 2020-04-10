@@ -1,3 +1,6 @@
+.section6 {
+  margin-bottom: 70px;
+}
 .section6-wrap {
   margin: 0 auto;
 }
@@ -10,7 +13,7 @@
   margin-bottom: 25px;
 }
 .section6-subtitle {
-  font-weight: 700;
+  font-weight: 500;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -26,18 +29,26 @@
   }
 }
 
-.section6-list {
+.section6__list {
   color: $primary-dark-color;
-  font-weight: 700;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 365px;
 
   & p {
     color: #3f4144;
+    width: 265px;
+    margin: 0;
+    font-weight: 400;
+  }
+  .section6__list-description {
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .section6 {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .section6-header {
     width: 270px;
@@ -62,8 +73,6 @@
     }
   }
   .section6-header {
-    font-size: 27px;
-
     &:before {
       display: block;
       content: 'HARD';
@@ -84,6 +93,12 @@
   .section6__list {
     font-size: 8px;
     padding-left: 10px;
+    width: 220px;
+    margin: 0;
+
+    & p {
+      width: 210px;
+    }
 
     &:before {
       position: absolute;
@@ -98,19 +113,19 @@
       box-shadow: unset;
       background-image: url(../images/shadow-sec6.jpg);
     }
-
-    & p {
-      color: #3f4144;
-    }
   }
   .section6__list-description {
-    font-weight: 900;
     font-size: 9px;
   }
 }
 @media (min-width: 1200px) {
-  .section6__list-description,
-  .section6-subtitle {
+  .section6 {
+    margin-bottom: 120px;
+  }
+  .section6__list-description {
     font-size: 10px;
+  }
+  .section6__list-text {
+    font-size: 9px;
   }
 }
