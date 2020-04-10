@@ -1,7 +1,5 @@
 .button {
   @include font-settings(10px, 42px, $primary-white-color, 900);
-  width: 218px;
-  height: 42px;
   font-family: $primary-font-family;
   background-color: $primery-accent-color;
   color: $primary-white-color;
@@ -27,53 +25,37 @@
     outline: none;
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    @include font-settings(7px, 30px, $primary-white-color, 900);
-    height: 30px;
-  }
-  @media (min-width: 1200px) {
-    @include font-settings(7px, 32px, $primary-white-color, 900);
-    height: 32px;
-  }
-
   &_header {
     @include font-settings(12px, 54px, $primary-white-color, 900);
     height: 54px;
     width: 220px;
 
     @media (min-width: 768px) and (max-width: 1199px) {
-      @include font-settings(7px, 30px, $primary-white-color, 900);
       width: 110px;
-      height: 30px;
     }
     @media (min-width: 1200px) {
-      @include font-settings(7px, 32px, $primary-white-color, 900);
       width: 122px;
-      height: 32px;
     }
   }
 
-  &-form {
-    width: 174px;
+  &_form {
+    width: 166px;
     margin-left: 64px;
     height: 32px;
+    line-height: 28px;
 
     @media (min-width: 768px) and (max-width: 1199px) {
-      @include font-settings(7px, 30px, $primary-white-color, 900);
       width: 148px;
       margin-left: 56px;
-      height: 30px;
     }
     @media (min-width: 1200px) {
-      @include font-settings(8px, 32px, $primary-white-color, 900);
       width: 165px;
-      margin-left: 62px;
-      height: 32px;
+      margin-left: 70px;
     }
   }
 
-  &-footer {
-    @include font-settings(9px, 20px, $primary-white-color, 900);
+  &_footer {
+    @include font-settings(9px, 18px, $primary-white-color, 900);
     border: 0.5px solid $tretiary-dark-color;
     margin-top: 15px;
     outline: none;
@@ -97,36 +79,33 @@
       font-weight: 500;
     }
     @media (min-width: 768px) and (max-width: 1199px) {
-      @include font-settings(7px, 32px, $primary-white-color, 900);
       width: 137px;
-      height: 32px;
       margin-left: 116px;
     }
     @media (min-width: 1200px) {
-      @include font-settings(8px, 34px, $primary-white-color, 900);
       width: 140px;
-      height: 34px;
       margin-left: 131px;
     }
   }
 
-  &-section-10 {
-    @include font-settings(12px, 54px, $primary-white-color, 900);
+  &_section-10 {
+    @include font-settings(12px, 48px, $primary-white-color, 900);
     height: 52px;
+    width: 218px;
+    margin-right: 20px;
 
     @media (min-width: 768px) and (max-width: 1199px) {
-      @include font-settings(7px, 30px, $primary-white-color, 900);
       width: 123px;
-      height: 30px;
     }
     @media (min-width: 1200px) {
-      @include font-settings(7px, 32px, $primary-white-color, 900);
       width: 136px;
-      height: 32px;
     }
   }
 
-  &-section-15 {
+  &_section-15 {
+    width: 218px;
+    height: 42px;
+    line-height: 38px;
     @media (min-width: 768px) and (max-width: 1199px) {
       width: 134px;
     }
@@ -135,7 +114,7 @@
     }
   }
 
-  &-section-18 {
+  &_section-18 {
     width: 295px;
     @media (min-width: 768px) and (max-width: 1199px) {
       width: 202px;
@@ -145,7 +124,7 @@
     }
   }
 
-  &-section-19 {
+  &_section-19 {
     @media (min-width: 768px) and (max-width: 1199px) {
       width: 148px;
     }
@@ -153,53 +132,13 @@
       width: 164px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @include font-settings(7px, 26px, $primary-white-color, 900);
+    height: 30px;
+  }
+  @media (min-width: 1200px) {
+    @include font-settings(8px, 28px, $primary-white-color, 900);
+    height: 32px;
+  }
 }
-
-// .button {
-//   @include font-settings(10px, 42px, $primary-white-color, 900);
-//   width: 218px;
-//   height: 42px;
-//   font-family: $primary-font-family;
-//   background-color: $primery-accent-color;
-//   color: $primary-white-color;
-//   border: none;
-//   cursor: pointer;
-//   box-shadow: 0 7px 10px rgba($color-shadow-button, 0.25);
-//   text-transform: uppercase;
-//   text-align: center;
-//   margin: 0 auto;
-//   outline: 1.25px solid $primery-accent-color;
-
-//   &:hover {
-//     background-color: $secondary--accent-color;
-//     outline: 1px solid $secondary--accent-color;
-//     box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25);
-//   }
-
-//   &:focus {
-//     background-color: $tretiary-accent-color;
-//     outline: 1px solid $tretiary-accent-color;
-//     box-shadow: 0 7px 10px rgba($color-shadow-hover, 0.25);
-//     border: none;
-//   }
-
-//   &-footer {
-//     @include font-settings(9px, 31px, $primary-white-color, 900);
-//     outline: 1.25px solid $tretiary-dark-color;
-//     border: none;
-//     width: 137px;
-//     height: 31px;
-//     background-color: rgba ($background-color-dark, 0);
-
-//     &:hover,
-//     :focus {
-//       background-color: $secondary--accent-color;
-//       border: 1, 25px solid $secondary--accent-color;
-//       box-shadow: none;
-//     }
-//   }
-
-//   &-section-18 {
-//     width: 295px;
-//   }
-// }

@@ -1,8 +1,10 @@
+.section6 {
+  margin-bottom: 70px;
+}
 .section6-wrap {
   margin: 0 auto;
 }
 .section6-header {
-  font-family: $primary-font-family;
   font-size: 18px;
   font-weight: 700;
   width: 210px;
@@ -11,9 +13,7 @@
   margin-bottom: 25px;
 }
 .section6-subtitle {
-  font-family: $primary-font-family;
-  font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -29,20 +29,27 @@
   }
 }
 
-.section6-list {
-  font-family: $primary-font-family;
+.section6__list {
   color: $primary-dark-color;
-  font-size: 14px;
-  font-weight: 700;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 365px;
+  line-height: 1.5;
 
   & p {
     color: #3f4144;
+    width: 265px;
+    margin: 0;
+    font-weight: 400;
+  }
+  .section6__list-description {
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .section6 {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .section6-header {
     width: 270px;
@@ -59,25 +66,22 @@
       left: -350px;
       width: 100%;
       background-repeat: no-repeat;
-      height: 430px;
+      height: 415px;
       background-size: contain;
       z-index: 3;
-      box-shadow: unset;
       background-image: url(../images/man-sec-6.png);
     }
   }
   .section6-header {
-    font-size: 27px;
-
     &:before {
       display: block;
       content: 'HARD';
       font-size: 140px;
-      font-weight: 800;
+      font-weight: 900;
       color: $tretiary-light-color;
       transform: rotate(90deg);
       left: -400px;
-      bottom: 120px;
+      bottom: 140px;
       position: absolute;
       z-index: 2;
     }
@@ -89,6 +93,13 @@
   .section6__list {
     font-size: 8px;
     padding-left: 10px;
+    width: 220px;
+
+    margin: 0;
+
+    & p {
+      width: 210px;
+    }
 
     &:before {
       position: absolute;
@@ -96,29 +107,49 @@
       left: -380px;
       width: 100%;
       background-repeat: no-repeat;
-      height: 550px;
-      bottom: -80px;
+      height: 480px;
+      bottom: 0;
       background-size: contain;
       z-index: 1;
-      box-shadow: unset;
       background-image: url(../images/shadow-sec6.jpg);
     }
-
-    & p {
-      color: #3f4144;
-    }
   }
+
   .section6__list-description {
-    font-weight: 900;
     font-size: 9px;
   }
 }
 @media (min-width: 1200px) {
-  .section6-header {
-    font-size: 30px;
+  .section6 {
+    margin-bottom: 120px;
   }
-  .section6__list-description,
-  .section6-subtitle {
+  .right-block {
+    &:before {
+      height: 475px;
+    }
+  }
+
+  .section6-header {
+    &:before {
+      left: -400px;
+      bottom: 160px;
+      font-size: 157px;
+    }
+  }
+  .section6__list-description {
     font-size: 10px;
+  }
+  .section6__list-text {
+    font-size: 9px;
+  }
+  .section6__list {
+    width: 255px;
+    &:before {
+      height: 100%;
+      bottom: 0;
+    }
+    & p {
+      width: 240px;
+    }
   }
 }
