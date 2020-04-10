@@ -37,12 +37,17 @@
     margin: 0 auto 40px;
   }
 
+  .section13_text-bold {
+  text-transform: uppercase;
+}
+
 @media(min-width:768px) {
  
     .section13 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 80px;
     }
 
     .section13_wrap {
