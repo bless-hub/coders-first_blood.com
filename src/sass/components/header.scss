@@ -1,17 +1,20 @@
 .header {
+    position: relative;
+    margin-bottom: 56px;
+    width: 100%;
+    height: 613px;
     background-color: $background-color-dark;
     background-image: url(../../images/Layer_header.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: $primary-white-color;
     font-family: $primary-font-family;
-    margin-bottom: 56px;
     padding-top: 15px;
 }
 
-.header_container {
-    height: 613px;
-
+.background_container {
+    position: relative;
+    
     &::after {
         content: 'GoIT';
         display: block;
@@ -20,7 +23,10 @@
         color: rgba(0, 0, 0, 0.2);
         text-transform: uppercase;
         text-align: center;
-        transform: translateY(-350px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 }
 
@@ -126,65 +132,51 @@
 }
 
 @media (max-width: 767px) {
-    .bg-img_container, 
-    .socials, 
-    .header_counter1 {
+    .background_img-container, 
+    .socials {
         display: none;
     }
 
-    .site_nav, .header_container-socials {
+    .site_nav, 
+    .header_container-socials {
         width: 480px;
         padding: 0 15px;
         margin: 0 auto;
     }
 }
 
-@media (max-width: 1199px) {
-    .header_counter2 {
-        display: none;
-    }
-}
-
 @media (min-width: 768px) {
-    .header_container {
+    .header {
         height: 476px;
-        position: relative;
+    }
 
+    .background_container {
         &::after {
             font-size: 236px;
-            position: absolute;
         }
     }
 
-    .site_nav {
+    .site_nav, 
+    .header_container-socials {
         width: 670px;
-        padding: 0 15px;
         margin: 0 auto 48px;
     }
 
-    .bg-img_container {
+    .background_img-container {
+        width: 670px;
         height: 420px;
-        overflow: hidden;
         position: absolute;
-        bottom: 0; 
-        right: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-30%);
         z-index: 5;
+        overflow: hidden;
     }
 
-    .header_bg-img {
+    .background_img {
         min-width: 360px;
         min-height: 420px;
         object-fit: cover;
-    }
-
-    .header_counter1 {
-        width: 40px;
-        height: 15px;
-        transform: rotate(-90deg);
-
-        & span {
-            font-size: 13px;
-        }
     }
 
     .header_container-flex {
@@ -197,6 +189,16 @@
     .header_container-socials {
         display: flex;
         justify-content: space-between;
+        position: relative;
+
+        &::before {
+            content: '01 \005F';
+            display: block;
+            width: 40px;
+            height: 15px;
+            transform: rotate(-90deg);
+            position: absolute;
+        }
     }
 
     .header_heading {
@@ -268,10 +270,13 @@
 
     .socials {
         list-style: none;
-         margin: 0;
+        margin: 0;
         padding: 0;
         display: flex;
         justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 80px;
 
     & li:nth-child(1) {
         margin-right: 10px;
@@ -287,11 +292,12 @@
 }
 
 @media (min-width: 1200px) {
-    .header_container {
+    .header {
         height: 530px;
     }
 
-    .site_nav {
+    .site_nav, 
+    .header_container-socials {
         width: 1130px;
     }
 
@@ -308,20 +314,29 @@
 
     .header_text-bold {
         line-height: 19px;
-        
     }
 
     .header_text-grey {
         line-height: 15px;
     }
 
-    .header_counter1 {
-        font-size: 15px;
-        float: left;
+    .header_container-socials {
+
+        &::before {
+            font-size: 15px;
+        }
+        
+        &::after {
+            content: '02.';
+            font-size: 9px;
+            position: absolute;
+            top: 10px;
+            left:44px;
+        }
     }
 
-    .header_counter2 {
-        font-size: 9px;
+    .socials {
+        bottom: 0;
     }
 }
 
