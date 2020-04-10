@@ -2,22 +2,31 @@
   font-family: $primary-font-family;
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px)  {
     display: flex;
     justify-content: flex-start;
-    background-image: url(../images/chart.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     margin-bottom: 92px;
   }
-  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/chart@2x.png);
-  }
   @media (min-width: 768px) and (max-width: 1199px) {
-    background-size: 230px 110px;
+    background-image: url(../images/chart-768px@1x.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/chart-768px@2x.png);
+      background-size: 219px 110px;
+    }
   }
+
   @media (min-width: 1200px) {
-    background-size: 245px 121px;
+    background-image: url(../images/chart-1200px@1x.png);
+    margin-bottom: 125px;
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/chart-1200px@2x.png); 
+      background-size: 244px 121px;
+    }
   }
 
   &-title {
