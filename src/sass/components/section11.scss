@@ -68,15 +68,18 @@
 }
 
 .awards-list-text {
+  
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
   font-family: 'Acrom';
   font-weight: 500;
-  background-color: #000000;
+  background-color: #110909;
 }
 
 .card-name {
+  position: relative;
+  z-index: 1;
   width: 189px;
   font-size: 14px;
   line-height: 20px;
