@@ -136,9 +136,11 @@
 
   .section4__list {
     font-size: 8px;
+    line-height: 1.5;
     padding-left: 10px;
 
     & p {
+      width: 230px;
       color: #3f4144;
     }
   }
