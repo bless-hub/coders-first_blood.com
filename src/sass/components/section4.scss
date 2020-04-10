@@ -8,7 +8,6 @@
 }
 
 .section4__title {
-  font-family: $primary-font-family;
   font-size: 18px;
   width: 273px;
   margin: 0 auto;
@@ -18,13 +17,12 @@
 }
 
 .section4-subtext {
-  font-family: $primary-font-family;
   color: $secondary-light2-color;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 50px;
+  width: 465px;
 
   & .section4-text {
-    font-family: $primary-font-family;
     font-weight: 700;
     color: $primary-dark-color;
     display: block;
@@ -41,7 +39,7 @@
 
 .section4-subheader {
   font-family: $primary-font-family;
-  font-weight: 700;
+  font-weight: 500;
   width: 265px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -58,17 +56,17 @@
 }
 
 .section4__list {
-  font-family: $primary-font-family;
   color: $primary-dark-color;
-  font-weight: 700;
-
+  font-weight: 900;
   & p {
+    width: 360px;
     color: #3f4144;
+    margin: 0;
+    font-weight: 400;
   }
 }
 
 .section4-header2 {
-  font-family: $primary-font-family;
   width: 273px;
   color: $primary-white-color;
   margin: 0 auto;
@@ -77,6 +75,7 @@
 
 .section4__list-description {
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -145,7 +144,6 @@
   }
   .section4__list-description {
     font-size: 9px;
-    font-weight: 700;
   }
 
   .img-wrap {
@@ -175,14 +173,13 @@
   .list4__wrapper {
     margin-right: 70px;
   }
-  .section4__title {
-    font-size: 10px;
-  }
-  .section4-text {
-    font-size: 10px;
-  }
 
+  .section4__title,
+  .section4-text,
   .section4__list-description {
     font-size: 10px;
+  }
+  .section4__list {
+    font-size: 9px;
   }
 }
