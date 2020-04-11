@@ -1,308 +1,299 @@
 .gift-name {
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    font-family: "Acrom";
-    font-weight: bold;
-    margin: 0 auto;
-    text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'Acrom';
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .gift-sale {
-    width: 370px;
-    height: 275px;
-    filter: drop-shadow(0px 8px 7px rgba(0,0,0,0.15));
-    background-color: #052139;
-    margin: 0 auto;
+  width: 370px;
+  height: 275px;
+  filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.15));
+  background-color: #052139;
+  margin: 0 auto;
 }
 
 .gift__sale-top {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    line-height: 19px;
-    color: #ffffff;
-    font-family: "Acrom";
-    font-weight: 500;
-    list-style: none;
-    padding: 74px 75px 0 75px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+  font-family: 'Acrom';
+  font-weight: 500;
+  list-style: none;
+  padding: 74px 75px 0 75px;
 }
 
 .sale-text-top-left {
-    width: 94px;
+  width: 94px;
 
-    &:before {
-        position: absolute;
-        width: 38px;
-        height: 3px;
-        background-color: #3f4144;
-        border: 0.625px solid #ffffff;
-        content: '';
-        margin-top: 27px;
-        margin-left: 100px;
-    }
+  &:before {
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    background-color: #3f4144;
+    border: 0.625px solid #ffffff;
+    content: '';
+    margin-top: 27px;
+    margin-left: 100px;
+  }
 }
 
 .sale-text-top-right {
-    align-self: center;
-    font-size: 15px;
-    line-height: 29px;
-    font-weight: 800;
-    text-transform: uppercase;
-    
-    
+  align-self: center;
+  font-size: 15px;
+  line-height: 29px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.gift__sale-bottom{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 75px;
-    list-style: none;
+.gift__sale-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px;
+  list-style: none;
 }
 
 .sale-list-bottom-left {
-    width: 70px;
-    font-size: 13px;
-    line-height: 19px;
-    color: #000000;
-    font-family: "Acrom";
-    font-weight: 500;
-    
+  width: 70px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000000;
+  font-family: 'Acrom';
+  font-weight: 500;
 }
 
 .sale-text {
-    background-color: #16ebfe;
+  background-color: #16ebfe;
 }
 
 .sale-list-bottom-right {
-    font-size: 39px;
-    line-height: 29px;
-    color: #ffffff;
-    font-family: "Acrom";
-    font-weight: 800;
-    align-self: center;
+  font-size: 39px;
+  line-height: 29px;
+  color: #ffffff;
+  font-family: 'Acrom';
+  font-weight: 800;
+  align-self: center;
 }
 
 .sale-price {
-    font-size: 13px;
-    line-height: 19px;
-    font-family: "Acrom";
-    font-weight: 500;
-    text-transform: uppercase;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'Acrom';
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .gift__text {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .gift-sub-text-bold {
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;
-    font-family: "Acrom";
-    font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  font-family: 'Acrom';
+  font-weight: bold;
 }
 
 .gift-sub-text {
-    font-size: 13px;
-    line-height: 19px;
-    color: #3f4144;
-    font-family: "Acrom";
+  font-size: 13px;
+  line-height: 19px;
+  color: #3f4144;
+  font-family: 'Acrom';
 }
 
 .gigt-sub-text-color {
-    
-    font-size: 14px;
-    line-height: 22px;
-    color: #ff6b08;
-    font-family: "Acrom";
-    font-weight: 500;
-    margin: 25px 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ff6b08;
+  font-family: 'Acrom';
+  font-weight: 500;
+  margin: 25px 0;
 
-    &::before {
-        display: block;
-        float: left;
-        content: "";
-        width: 1px;
-        height: 40px;
-        background-color: #000000;
-        border: 1.5625px solid #000000;
-        transform: rotate(30deg);
-        margin: 2px 17px 0 -40px;
-    }
-
+  &::before {
+    display: block;
+    float: left;
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #000000;
+    border: 1.5625px solid #000000;
+    transform: rotate(30deg);
+    margin: 2px 17px 0 -40px;
+  }
 }
 
 @media (max-width: 767px) {
-
-    .gift-sub-text {
-        width: 325px;
-    }
+  .gift-sub-text {
+    width: 325px;
+  }
 }
 
 @media (min-width: 768px) {
+  .gift {
+    width: 670px;
+    height: 270px;
+    margin: 0;
+    padding: 0;
+  }
 
-    .gift {
-        width: 670px;
-        height: 270px;
-        margin: 0;
-        padding: 0;
-    }
+  .gift-name {
+    font-size: 27px;
+    line-height: 34px;
+    padding-left: 270px;
+  }
 
-    .gift-name {
-        font-size: 27px;
-        line-height: 34px;
-        transform: translateX(20%);
-    }
+  .gift-sale {
+    width: 257px;
+    height: 191px;
+    transform: translate(-70%, -20%);
+  }
 
-    .gift-sale {
-        width: 257px;
-        height: 191px;
-        transform: translate(-70%, -20%);
-    }
+  .gift__sale-top {
+    font-size: 9px;
+    line-height: 13px;
+    padding: 50px 50px 0 50px;
+  }
 
-    .gift__sale-top {
-        font-size: 9px;
-        line-height: 13px;
-        padding: 50px 50px 0 50px;
-    }
-    
-    .sale-text-top-left {
-        width: 68px;
-    
-        &:before {
-            width: 38px;
-            height: 3px;
-            background-color: #3f4144;
-            border: 1px solid #ffffff;
-            margin-top: 17px;
-            margin-left: 65px;
-        }
-    }
-    
-    .sale-text-top-right {
-        font-size: 10px;
-        line-height: 20px;
-    }
-    
-    .gift__sale-bottom{
-        padding: 0 50px;
-    }
-    
-    .sale-list-bottom-left {
-        font-size: 9px;
-        line-height: 13px;
-    }
-    
-    .sale-list-bottom-right {
-        font-size: 27px;
-        line-height: 20px;
-    }
+  .sale-text-top-left {
+    width: 68px;
 
-    .sale-price {
-        font-size: 9px;
-        line-height: 20px;
+    &:before {
+      width: 38px;
+      height: 3px;
+      background-color: #3f4144;
+      border: 1px solid #ffffff;
+      margin-top: 17px;
+      margin-left: 65px;
     }
+  }
 
-    .gift__text {
-        width: 179px;
-        transform: translate(93%, -120%);
+  .sale-text-top-right {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .gift__sale-bottom {
+    padding: 0 50px;
+  }
+
+  .sale-list-bottom-left {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .sale-list-bottom-right {
+    font-size: 27px;
+    line-height: 20px;
+  }
+
+  .sale-price {
+    font-size: 9px;
+    line-height: 20px;
+  }
+
+  .gift__text {
+    width: 179px;
+    transform: translate(93%, -120%);
+  }
+
+  .gift-sub-text-bold {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .gift-sub-text {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .gigt-sub-text-color {
+    font-size: 9px;
+    line-height: 13px;
+    margin: 15px 0;
+
+    &::before {
+      width: 1px;
+      height: 19px;
+      margin: 5px 0 0 -19px;
     }
+  }
 
-    .gift-sub-text-bold {
-        font-size: 9px;
-        line-height: 12px;
-    }
-
-    .gift-sub-text {
-        font-size: 8px;
-        line-height: 12px;
-    }
-
-    .gigt-sub-text-color {
-        font-size: 9px;
-        line-height: 13px;
-        margin: 15px 0;
-
-        &::before {
-            width: 1px;
-            height: 19px;
-            margin: 5px 0 0 -19px;
-        }
-    }
-
-    .button-section-18 {
-        width: 200px;
-        height: 26px;
-        font-size: 7px;
-        letter-spacing: 1px;
-        line-height: 10px;
-    }
+  .button-section-18 {
+    width: 200px;
+    height: 26px;
+    font-size: 7px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .gift {
+    width: 744px;
+  }
 
-    .gift {
-        width: 744px;
-    }
+  .gift-name {
+    font-size: 30px;
+    line-height: 38px;
+  }
 
-    .gift-name {
-        font-size: 30px;
-        line-height: 38px;
-    }
+  .gift-sale {
+    width: 287px;
+    height: 213px;
+  }
 
-    .gift-sale {
-        width: 287px;
-        height: 213px;
-    }
+  .gift__sale-top {
+    padding-top: 65px;
+  }
 
-    .gift__sale-top {
-        padding-top: 65px;
-    }
+  .sale-text-top-left {
+    font-size: 10px;
+    line-height: 15px;
+  }
 
-    .sale-text-top-left {
-        font-size: 10px;
-        line-height: 15px;
-    }
+  .sale-text-top-right {
+    font-size: 11px;
+    line-height: 23px;
+  }
 
-    .sale-text-top-right {
-        font-size: 11px;
-        line-height: 23px;
-    }
+  .sale-list-bottom-left {
+    font-size: 10px;
+    line-height: 15px;
+  }
 
-    .sale-list-bottom-left {
-        font-size: 10px;
-        line-height: 15px;
-    }
+  .sale-list-bottom-right {
+    font-size: 30px;
+    line-height: 23px;
+  }
 
-    .sale-list-bottom-right {
-        font-size: 30px;
-        line-height: 23px;
-    }
+  .gift-sub-text-bold {
+    width: 198px;
+    font-size: 10px;
+    line-height: 13px;
+  }
 
-    .gift-sub-text-bold {
-        width: 198px;
-        font-size: 10px;
-        line-height: 13px;
-    }
+  .gift-sub-text {
+    font-size: 9px;
+    line-height: 13px;
+  }
 
-    .gift-sub-text {
-        font-size: 9px;
-        line-height: 13px;
-    }
+  .gigt-sub-text-color {
+    font-size: 10px;
+    line-height: 15px;
+  }
 
-    .gigt-sub-text-color {
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .button-section-18 {
-        width: 221px;
-        height: 31px;
-        font-size: 8px;
-        letter-spacing: 1px;
-        line-height: 11px;
-    }
-
+  .button-section-18 {
+    width: 221px;
+    height: 31px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 11px;
+  }
 }
